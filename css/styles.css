@@ -21,6 +21,7 @@
   --background-color-social: #afb1b8;
   --border-color-header: #ececec;
   --border-color-portfolio: #eeeeee;
+  --background-color-modal: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -230,6 +231,27 @@ body {
 .button:focus {
   color: var(--color-white);
   background-color: var(--background-color-button);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-modal);
+}
+
+.data-modal {
+  width: 528px;
+  height: 581px;
+  left: 536px;
+  top: 221px;
+
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 /* Section Переваги */
