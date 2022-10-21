@@ -66,10 +66,9 @@
       <section class="hero">
         <div class="hero-list">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button" type="button">Замовити послугу</button>
-          <div class="backdrop">
-            <div class="data-modal"></div>
-          </div>
+          <button class="button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -441,5 +440,29 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-button" type="button" data-modal-close>
+          <svg class="modal-buttoms" width="11" height="11">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          magnam qui excepturi illum veritatis nulla numquam adipisci maxime
+          aliquam sunt doloremque, minus iste illo, dolores est hic commodi,
+          dicta odit. Architecto cumque dolores vitae omnis maxime et iste in
+          quisquam minima praesentium sequi autem libero quas reprehenderit
+          magnam, exercitationem ducimus porro totam harum veniam ad fuga quam.
+          Inventore aut facere illo, voluptatem alias natus accusamus blanditiis
+          rerum ipsam quod repellat velit tempore iusto quae nostrum quisquam
+          tenetur quibusdam veniam quam. Odio, corrupti veritatis impedit
+          dolorum asperiores cum, eveniet accusamus excepturi, corporis maiores
+          voluptas dignissimos illo consequuntur commodi natus molestias illum?
+        </p>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
