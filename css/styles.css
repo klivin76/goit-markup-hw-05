@@ -234,6 +234,8 @@ body {
   background-color: var(--background-color-button);
 }
 
+/* Модальнне вікно */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -264,12 +266,19 @@ body {
   border-radius: 4px;
 }
 .modal-close-button {
-  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
+
   border-radius: 50%;
   background-color: var(--color-white);
   border: 1px solid var(--background-color-modal-btn);
+  cursor: pointer;
 }
 
 /* Section Переваги */
